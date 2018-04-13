@@ -1,0 +1,16 @@
+{
+  "name": "cloudant-hack",
+  "version": "0.0.1",
+  "description": "Cloudant Hack",
+  "private": true,
+  "engines": {
+    "node": "8.9.3"
+  },
+  "scripts": {
+    "login": "bx login -a https://api.au-syd.bluemix.net -c 48984e66e3b9b429a0cfe14d0637f075 -o sieg_dev -s dev",
+    "service": "bx service create cloudantNoSQLDB Lite cloudant-hack-ippei"
+  },
+  "dependencies": {
+    "@cloudant/cloudant": "^2.1.0"
+  }
+}
